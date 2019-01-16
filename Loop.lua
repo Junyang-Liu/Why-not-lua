@@ -42,6 +42,18 @@ function for_loop_test()
 end
 --for_loop_test()
 
+-- 关于next()
+function next_table_test()
+	print("======next==============")
+	local TableTmp = {99,98}
+	print(TableTmp)
+	local k, v, s, a= ipairs(TableTmp)
+	print(k, v, s, a)
+
+	-- body
+end
+next_table_test()
+
 -- 关于if循环
 -- lua把 nil和false 判定为 not
 function if_loop_test()
@@ -77,4 +89,5 @@ function if_loop_test()
 
 	-- body
 end
-if_loop_test()
+--if_loop_test()
+
