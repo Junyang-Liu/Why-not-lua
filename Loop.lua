@@ -40,4 +40,41 @@ function for_loop_test()
 	end
 	-- body
 end
-for_loop_test()
+--for_loop_test()
+
+-- 关于if循环
+-- lua把 nil和false 判定为 not
+function if_loop_test()
+	print("======if==============")
+	local x = 1
+	if not x then
+		print("not")
+	elseif x then
+		print("true, value:"..x)
+	else
+		print("it isn't false or true")
+	end
+
+	print("======if==============")
+	local x = false
+	if not x then
+		print("not")
+	elseif x then
+		print("true"..x)
+	else
+		print("it isn't false or true")
+	end
+
+	print("======if==============")
+	local x = nil
+	if not x then
+		print("not")
+	elseif x then
+		print("true"..x)
+	else
+		print("it isn't false or true")
+	end
+
+	-- body
+end
+if_loop_test()
