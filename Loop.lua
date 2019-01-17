@@ -52,7 +52,7 @@ function next_table_test()
 
 	-- body
 end
-next_table_test()
+--next_table_test()
 
 -- 关于if循环
 -- lua把 nil和false 判定为 not
@@ -90,4 +90,18 @@ function if_loop_test()
 	-- body
 end
 --if_loop_test()
+
+-- 实现for循环continue
+function for_continue_test( ... )
+	local TableTmp = {99,98,99,98,99,98}
+	for i,v in ipairs(TableTmp) do
+		if v == 99 then
+		else
+			print(i,v)
+		end
+	end
+
+	-- body
+end
+for_continue_test()
 
