@@ -87,9 +87,20 @@ function if_loop_test()
 		print("it isn't false or true")
 	end
 
+	if x == nil then
+		print("(x == nil) == true!")
+	else
+		print("(x == nil) ~= true!")
+	end
+	if x == false then
+		print("(x == false) == true!")
+	else
+		print("(x == false) ~= true!")
+	end
+
 	-- body
 end
---if_loop_test()
+if_loop_test()
 
 -- 实现for循环continue
 function for_continue_test( ... )
@@ -103,5 +114,5 @@ function for_continue_test( ... )
 
 	-- body
 end
-for_continue_test()
+--for_continue_test()
 
