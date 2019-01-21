@@ -100,7 +100,7 @@ function if_loop_test()
 
 	-- body
 end
-if_loop_test()
+--if_loop_test()
 
 -- 实现for循环continue
 function for_continue_test( ... )
@@ -116,3 +116,22 @@ function for_continue_test( ... )
 end
 --for_continue_test()
 
+function sharp_test( ... )
+	local Table ={1,2,3}
+	print(#Table)
+
+	local Table ={[1]=1,[2]=2,[4]=10}
+	print(#Table)
+
+	local Table ={[1]=1,[2]=2,[5]=10}
+	print(#Table)
+
+	local Table ={[1]=1,[2]=2,[10]=10}
+	print(#Table)
+
+	local Table ={[3]=3,[2]=2,[10]=10}
+	print(#Table)
+
+	-- body
+end
+sharp_test()
